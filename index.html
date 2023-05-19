@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icecream</title>
+    <script src="index.js"></script>
+
+</head>
+<body>
+    <lable for="numOfScoops">Number Of Scoops</lable>
+    <input type="number" max="4" min="1" required id="numOfScoops"/>
+    <br><br>
+    <div id="choose">
+        <input type="radio" name="btn" id="coneBtn" value="coneBtn">
+        <lable for="cone">Cone</lable>
+        <input type="radio" name="btn" id="cupBtn" value="cupBtn">
+        <lable for="cone">Cup</lable>
+    </div>
+    <fieldset>
+        <div id="toppingDiv" >
+        <legend><h1>Toppings</h1></legend>
+       
+        <input type="checkbox" id="sprinkles" name="sprinkles" value="sprinkles" checked>
+        <lable for="sprinkles">Sprinkles ($.50)</lable><br>
+        <input type="checkbox" id="hotFudge" name="hotFudge" value="hotFudge">
+        <lable for="hotFudge">Hot Fudge($1.25)</lable><br>
+        <input type="checkbox" id="whippedCream" name="whippedCream" value="whippedCream">
+        <lable for="whippedCream">Whipped Cream($0.25)</lable><br>
+        <input type="checkbox" id="cherry" name="cherry" value="cherry">
+        <lable for="cherry">Cherry($0.25)</lable><br>
+       
+    </fieldset>
+</div>
+    <fieldset>
+        <input type="button" id="submit" name="submit" value="submit">
+        <table>
+            <tr>
+                <td>Base price:</td>
+                <td>$<span id="basePrice">0:00</span></td>
+            </tr>
+            <tr>
+                <td>Toppings:</td>
+                <td>$<span id="toppings">0:00</span></td>
+            </tr>
+            <tr>
+                <td>Tax:</td>
+                <td>$<span id="tax">0:00</span></td>
+            </tr>
+            <tr>
+                <td>Total Due:</td>
+                <td>$<span id="totalDue">0:00</span> </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    
+</body>
+</html>
